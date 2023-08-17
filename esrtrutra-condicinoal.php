@@ -50,8 +50,7 @@ if($numero  %2 == 0){
 }else{
     echo "impara";
 }
-"<hr>";
-
+"<br>";
 echo ('w');
 $diaSemana = date('w');
 if( $diaSemana ==0){
