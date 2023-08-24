@@ -1,5 +1,6 @@
 <?php
  if(isset($_POST['cep']) && !empty($_POST['cep'])) {
+    
     $cep = $_POST['cep'];
    $resulado = file_get_contents("https://viacep.com.br/ws/$cep/json/");
     $dadosEndereco =json_decode($resulado, true);
