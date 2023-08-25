@@ -25,7 +25,7 @@
             <input name="qtdeCadastre" type="number" id="qtdeCadastre">
             <br>
             <button type="submit">gerar</button>
-            <a href="qtdeCadastre.php">cancelar </a>
+            <a href="bilioteca.php">cancelar </a>
         </form>
         <hr>
         <?php
