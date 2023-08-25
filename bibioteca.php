@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <title>cadastre de aluno</title>
         <style>
-            .boxSenha{
+            .boxCadastre{
                 border:1px solid #cccccc;
                 display:inline-block;
                 padding:20px;
@@ -18,12 +18,14 @@
         </style>
     </head>
     <body>
-        <h1>cadastre de aluno<</h1>
-        <form action="bilioteca.php"method="get">
+        <h1>cadastre de aluno</h1>
+        <form action="biblioteca.php"method="get">
             <label for="qtdeCadastre">quantidades de cadastre</label>
             <br>
-            <input name="qtdeCadastre" type="number" id="qtdeCadastre">
+            <input name="qtdeCadastre" type="varchar" id="qtdeCadastre">
             <br>
+            <button type="submit">gerar</button>
+            <a href="bilioteca.php">cadastre </a>
             <button type="submit">gerar</button>
             <a href="bilioteca.php">cancelar </a>
         </form>

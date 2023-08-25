@@ -1,9 +1,11 @@
+
+?>
 <html>
     <head>
-              <title>bilioteca </title>
+              <title>biblioteca </title>
     </head>
     <body>
-         <h1>bilioteca</h1>
+         <h1>biblioteca</h1>
          <?php
 
  
