@@ -44,17 +44,17 @@
             <button type="submit">visualizar</button>
                 <a href="sistemabiblioteca.php">cancelar </a>
         </form>
-       <p>$livro : <?=$dadosbiblioteca['livro'] ?></p>
+       <p>livro : <?=$dadosbiblioteca['livro'] ?></p>
        echo"livro";
-       <p>$isbn: <?=$dadosbiblioteca['isbn'] ?></p>
+       <p>isbn: <?=$dadosbiblioteca['isbn'] ?></p>
        echo"isbn";
-        <p>$AnoPublicacao: <?=$dadosbiblioteca['anopublicacao'] ?></p>
+        <p>AnoPublicacao: <?=$dadosbiblioteca['anopublicacao'] ?></p>
         echo"ano publicacao";
-        <p>$titulo : <?=$dadosbiblioteca['titulo'] ?></p>
+        <p>titulo : <?=$dadosbiblioteca['titulo'] ?></p>
         echo"titulo";
-        <p>$autor : <?=$dadosbiblioteca['autor'] ?></p>
+        <p>autor : <?=$dadosbiblioteca['autor'] ?></p>
         echo"autor";
-        <p>$numeropaginas: <?=$dadosbiblioteca['numeropaginas'] ?></p>
+        <p>numeropaginas: <?=$dadosbiblioteca['numeropaginas'] ?></p>
         echo"numero paginas";
         <hr>
         <?php
