@@ -1,4 +1,15 @@
-
+<?php
+ if(isset($_POST['nome']) && !empty($_POST['nome'])) {
+    
+    $cep = $_POST['nome'];
+   $resulado = file_get_contents("https://viacep.com.br/ws/$nome/json/");
+    $dadosbibilioteca =json_decode($resulado, true);
+    //var_dump($dadosEndereco);
+ }else{
+    header("location:buscar-biblioteca.php");
+    exit;
+ }
+?>
 ?>
 <html>
     <head>
@@ -6,6 +17,28 @@
     </head>
     <body>
          <h1>biblioteca</h1>
+         <form action="biblioteca.php"method="get">
+            <label for="cadastrarlivro">Cadastro de livros</label>
+            <br>
+            <input name="nomedolivro" type="varchar" >
+            <br>
+            <br>
+            <input name="nomedonome" type="varchar" >
+            <br>
+            <br>
+            <input name="nomedocpf" type="varchar" >
+            <br>
+            <br>
+            <input name="nomedotelefone" type="varchar" >
+            <br>
+            <br>
+            <input name="nomedocelular" type="varchar" >
+            <br>
+            <button type="submit">cadastar</button>
+                <a href="biblioteca.php">cadastre </a>
+            <button type="submit">cancelar</button>
+                <a href="biblioteca.php">cancelar </a>
+        </form>
          <?php
 
  
