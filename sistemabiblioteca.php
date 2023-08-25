@@ -1,7 +1,7 @@
 <?php
  if(isset($_POST['nome']) && !empty($_POST['nome'])) {
     
-    $cep = $_POST['nome'];
+    $nome = $_POST['nome'];
    $resulado = file_get_contents("https://viacep.com.br/ws/$nome/json/");
     $dadosbibilioteca =json_decode($resulado, true);
     //var_dump($dadosEndereco);
