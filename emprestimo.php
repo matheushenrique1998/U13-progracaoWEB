@@ -52,12 +52,13 @@
     <?php
     include('dados.php');
     if (isset($_POST["confirmar"])) {
-        $Titulo = $_POST["Titulo"];
-        $Autor = $_POST["Autor"];
         $ISBN = $_POST["ISBN"];
         $AnoPublicacao = $_POST["AnoPublicacao"];
-        $numeropaginas = $_POST["numeropaginas"];
-
+        $Titulo=$_POST["Titulo"];
+        $Autor=$_POST["Autor"];
+       $numeropaginas = $_POST["numeropaginas"];
+        
+         
         $livro = new Livro($ISBN, $AnoPublicacao, $Titulo, $Autor, $numeropaginas);
         $biblioteca->adicionarLivro($livro);
     }
@@ -65,23 +66,26 @@
 
     <table class="tabela" border="1">
         <thead>
-            <th class="tituloTabela" colspan="5">Informações do livro</th>
+            <th class="tituloTabela" colspan="5">Informações do Emprestimo</th>
             <tr>
-                <th>Título</th>
-                <th>Autor</th>
+                
                 <th>ISBN</th>
-                <th>Ano de Publicação</th>
-                <th>Número de Páginas</th>
+               <TR>AnoPublicacao</TR>
+                <TR>Titulo</TR>
+                <tr>Autor</tr>
+                <tr>numeropaginas</tr>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($biblioteca->getLivro() as $livro) : ?>
                 <tr>
-                <td><?= $livro->Titulo ?></td>
-                <td><?= $livro->Autor ?></td>
+            
                 <td>ISBN: <?= $livro->ISBN ?></td>
                 <td>Ano de Publicação: <?= $livro->AnoPublicacao ?></td>
+                <td>Titulo: <?= $livro->Titulo?></td>
+                <td>Autor : <?= $livro->Autor?></td>
                 <td>Número de Páginas: <?= $livro->numeropaginas ?></td>
+
                 </tr>
             <?php endforeach; ?>
         </tbody>

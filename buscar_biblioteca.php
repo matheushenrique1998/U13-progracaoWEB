@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>pesquisar aluno </h1>
-        <form action="cadastrolivro.php" method="post">
+        <form action="buscar_biblioteca.php" method="post">
             <fieldset>
                 <legend>digite o nome:</legend>
                 <input name="nome" type="text" placeholder="0000-000">
